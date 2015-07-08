@@ -1,0 +1,87 @@
+
+/* CSS file for stage1learning*/
+
+body {
+	font-family: Georgia, Helvetica, sans-serif;
+	width: 888px;
+}
+
+a {
+	color: rgb(81, 110, 255);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(250, 38, 102);
+	outline-color: rgb(250, 38, 102);
+}
+
+.homepage {
+	position: absolute;
+	left: 735px; /* looking for a better way to do this*/
+	top: 5px;
+	padding: 3px;
+	outline: 1px solid rgb(81, 110, 255);
+}
+
+.minibox,
+footer {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+}
+
+.pagetitle{
+	background-color: #001a9e;;
+	color: white;
+	margin: 10px;
+	padding: 5px 10px;
+	border-radius: 25px;
+}
+
+.text {
+	border-style: solid;
+	border-color: #bf60ff;
+	padding: 0 15px;
+	margin-left: 10px;
+	border-radius: 5px;
+	width: 390px;
+	text-align: justify;
+	margin: 10px;
+	margin-bottom: 25px;
+}
+
+ol {
+	font-size: 13px;
+} 
+
+/*images*/
+
+figcaption {
+	font-weight: bold;
+	font-size: 10px;
+}
+
+figure {
+	max-width: 200px;
+	margin:10px;
+}
+
+/*footer*/
+
+footer {
+	justify-content: space-between;
+}
+
+footer p {
+	margin: -8px 12px;
+	color: #7a7777;
+}
+
+
+/* * this is the trick from class to see the outlines, i like it a lot 
+and use it sometimes when things don't work the way I think they should*
+* {
+   outline: 1px solid red !important;
+}*/  /*what does the !important here mean*/

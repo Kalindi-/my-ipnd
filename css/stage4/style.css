@@ -1,0 +1,126 @@
+
+/*CSS style for the stage 4 pages*/
+
+body {
+	font-family: Georgia, Helvetica, sans-serif;
+	max-width: 888px;
+	margin: auto;
+	text-align: center;
+}
+
+/*some basic text style*/
+
+a {
+	color: rgb(81, 110, 255);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(250, 38, 102);
+}
+
+h1 {
+	background-color: #ddd; 
+	color: #888; 
+	margin-top: 2px; 
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-bottom: 8px;
+	padding: 10px; 
+	padding-left: 30px;
+}
+
+span {
+	font-size: 14px;
+	padding: -40px;
+}
+
+h2 {
+	color: darkviolet;
+}
+
+#instruction,
+#invitation  {
+	font-size: 10px;
+}
+
+.text {
+	font-size: 12px;
+	text-align: justify;
+}
+
+.error {
+	color: red;
+}
+
+
+/*style for the content of the website*/
+
+.memory,
+.content,
+footer { 
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+}
+
+.content {
+	flex-wrap: wrap;
+	margin-top: -10px;
+}
+
+.memory {
+	border-style: solid;
+	border-radius: 10px;
+	height: 180px;
+	width: 180px;
+	padding: 8px;
+	margin: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+/* implementation of the gam*/
+
+.to-be-changed {
+    visibility: hidden;
+}
+
+input[type=checkbox] {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+input[type=checkbox]:checked ~ .to-be-changed {
+	visibility: visible;
+}
+
+
+/*footer style*/
+
+
+footer p {
+	margin-top: 0px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0px;
+  	width: 888px;
+  	margin-bottom: -10px;
+  	justify-content: space-between;
+  	color: lightgray;
+  	background-color: white;
+}
+
+
+
+
+
+
+/* bibliography:
+http://tympanus.net/codrops/2012/12/17/css-click-events/
+https://css-tricks.com/the-checkbox-hack/
+*/

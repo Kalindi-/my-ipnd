@@ -1,0 +1,29 @@
+{% extends "/stage5/base.html" %}
+{% block content %}
+{% if error %}
+<p id="error">
+	 	There seems to be an error, try to put both values.
+</p>
+{% endif %}
+<h3>			
+		I am collecting couples of things for a future memory game. 
+</h3>
+<form method="post" action="/stage5/game_to_be">
+		<p>
+				put one of the couples here, the simplest one, like the term, or the name - (term is going to be displayed all in uppercase)
+				<br>
+				for example: KITTY 
+		</p>
+		<input name="term" value="{{term}}">
+		<br>
+		<p>
+				put the second one of the couples here, the more complex one, like the definition, or a "symbol" or metaphore for it. 
+				<br>
+				for example: little cute friend that miaos
+		</p>
+		<textarea name="definition" rows="5" cols="100">{{definition}}</textarea>
+		<br>
+		<br>
+		<input type="submit" name="submits">
+</form>
+{% endblock %}

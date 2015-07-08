@@ -1,0 +1,119 @@
+["THE PYTHON!!!!","Trying things out with python",
+
+
+{"tag":"section","contained1":{"heading":"h1","h_content":"elements of code"}},
+
+{"tag":"section","contained1":{"heading":"h2","h_content":"Variables"}},
+
+{"tag":"section", "element_class":"knowledge-bar",
+"contained1":{"heading":"h4", "h_content":"Variables and Values", 
+"content":["a variable stores a value", "to assign a value to the variable we use '=' ", 
+"it can contain many types of info:","integers, strings, numbers, dictionaries"]},
+
+"contained2":{"heading":"h4", "h_content":"Variable activities", 
+"content":["things can happen to the variable, depending on their type:", 
+"we can put them together one after the other, sum them up,", 
+"multiply them (which can mean different things)", 
+"change parts of theirs, put them in a different order,", 
+"and we can also use them to give us their values when called"]},
+
+"contained3":{"heading":"h4", "h_content":"Like this:", 
+"content":["variable assignment statment"," &nbsp; e.g. cat_weight = 3.3"]}},
+
+
+{"tag":"div","element_class":"explanation", "class_heading":"Abstract thinking",
+"contained1":{"heading":"h4", "h_content":
+"Generalize the problem to get a general solution - Can reuse solution!!!!"},
+"contained2":{"heading":"h5", "h_content":"Awesome things - functions", 
+"content":["they are basically recipes for the general solution."]}},
+
+{"tag":"div","element_class":"knowledge-bar", "class_heading":"Functions",
+
+"contained1":{"heading":"h3", "h_content":"Defining functions", 
+"content":["They are defined through various steps:", 
+"def function_name(parameter, parameter):", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stuff happening to or with help of parameters", 
+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return something useful", "(if there is no return, chances are it did something internally to its variables, or your computer moves invane)"]},
+
+"contained2":{"heading":"h3", "h_content":"Why good", 
+"content":["Repetition: they help us avoid it!", 
+"The procedure needs to be expressed only one time, then it can be used as many times as wished for by simply calling it",
+"One calls it for it to come to action, and do what it is defined to do"]},
+
+"contained3":{"heading":"h3", "h_content":"Calling a function", 
+"content":[ "function_name(the required parameters)", "this is how one calls a function.",
+"You call it so that it comes to action, and does what it is defined to do"]}},
+
+
+{"tag":"div","element_class":"knowledge-bar", "class_heading":"BUGS - A mini guide on how to try to deal with them",
+"contained1":{ "content":[" read errors, they tell a lot,  usually from error line up-streem"]},
+"contained2":{ "content":["Doesn't make an error? split it up in pieces and revisit the values of the variables"]},
+"contained5":{ "content":[" take the original working code, make sure it works, and step by step replace"]},
+"contained3":{ "content":["making print statments along the way, helps see where and what actually happens"]},
+"contained4":{ "content":["comment out out pieces,use different versions of code"]}},
+
+
+{"tag":"div","element_class":"explanation", "class_heading":"List - a sequence of anything",
+"contained1":{ "content":["Last summer i watched james bond for the first time and i was severely disappointed, but this example is really good, so i will also help james stay in popular culture a moment longer, a moment stronger."]}},
+
+
+{"tag":"div","element_class":"knowledge-bar",
+"contained1":{"content":["james_bond<br> = :)"]},
+"contained2":{"content":["james_bond<br>= agent_007"]},
+"contained3":{"content":["agent_007 <br>= :)"]},
+"contained4":{"content":["it is the same!<br>they are aliases!"]},
+"contained5":{"content":["we punch james_bond."]},
+"contained6":{"content":["james_bond <br>= :("]},
+"contained7":{"content":["how is agent_007?"]}},
+
+{"tag":"div","element_class":"explanation",
+"contained1":{"heading":"h3", "h_content":": (", "content":["when p = q, p and q refer to the same list, as we change p we change q as well. This is responsible for this: <br> when a function changes a list taken as input, no need for the return statement because of aliasing (more names for same list)<br>unlike<br>when a function takes in integers it makes a new variable that makes something happen, if there s no return statement it doesn't pass the new value onto anything"]}},
+
+
+{"tag":"div","element_class":"knowledge-bar",
+"contained1":{"heading":"h3", "h_content":"True or False?", "content":["list.index(value)<br>value in list<br>value not in list<br>not value in list"]},
+"contained2":{"heading":"h3", "h_content":"order", "content":["in the list things are in order,<br> from 0 to -1 (haha)"]},
+"contained3":{"heading":"h3", "h_content":" len(list)", "content":["do you want to know how long is it?"]},
+"contained4":{"heading":"h3", "h_content":" list's sister", "content":["the tuple,<br>can have things inside,<br>but doesnt want to change"]}},
+
+
+{"tag":"div","element_class":"knowledge-bar5", "class_heading":"Doing stuff with lists",
+
+"contained1":{"heading":"h4", "h_content":"list<strong>.append</strong>(anything)", 
+"content":["Append appends whatever is given into the last spot on the list. So in case it is a list, the whole list becomes the last element of the list.Append changes the called list."]},
+"contained2":{"heading":"h4", "h_content":"<strong>concatenate</strong>:<br>newlist=list+list", 
+"content":["Adds what is given from the last spot forward. If the list added has 3 elements, concatenation will increase the length of the list by 3 elements. It does not alias - it creates a new list when doing so. If the concatenation happens within a function, nothing happens to the mother list."]},
+"contained3":{"heading":"h4", "h_content":"<strong>whitinconcatenate</strong>: list+=stufftoadd", 
+"content":["+= aliases the list and so whatever happens to the new list happens to the old list as well - this is why when inside functions their values are transfered also out."]},
+"contained4":{ "heading":"h4", "h_content":"Example excercise",
+"content":["function with three lists as inputs. Mutate the first to include 'a' as the last entry, mutate the second to include 'a', 'b', 'c' and a copy of the last one returned with additional 'd'"],
+"img":["img/solution.png", "def list_test(list1,list2,list3): list1.append('a') list2+=['a','b','c'] return list3+['d']", "Lists at the end: [1, 2, 3, 'a'],[1, 2, 3, 'a', 'b', 'c'],[1, 2, 3], function returns: [1, 2, 3, 'd']"]}},
+
+
+
+{"tag":"div","element_class":"knowledge-bar", "class_heading":"Strings <br><br>' &nbsp;&nbsp;&nbsp;' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#34;  &nbsp;&nbsp;&nbsp; &#34; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ''' &nbsp;&nbsp;&nbsp; ''' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#34;&#34;&#34; &nbsp;&nbsp;&nbsp;    &#34;&#34;&#34;",
+
+"contained1":{"content":["string is a<br>sequence of<br>characters"]},
+"contained2":{"content":["multiply strings<br><br>print 's'* 4 <br>&gt;&gt; ssss"]},
+"contained3":{"content":["indexing<br>gives position #<br>string[num]<br>string[-num]"]},
+"contained4":{"content":["slicing:takes out apiece<br>string[num:num]<br>string[:num]<br>string[num:]"]},
+"contained5":{"content":["find in string<br>string.find('string')<br>string.find(string, where_start)<br> error = -1"]},
+"contained6":{"content":["mutations<br> create<br> a new<br> string"]}},
+
+
+{"tag":"div","element_class":"knowledge-bar explanation", "class_heading":"Branching and Looping",
+
+"contained1":{"heading":"h3", "h_content":"if-elif-else", 
+"content":["if test expression:<br>block<br>elif test expression:<br>block<br>else (no test expr.):<br>block<br>"]},
+"contained2":{"heading":"h3", "h_content":"for", 
+"content":["for name in list:<br>block"]},
+"contained3":{"heading":"h3", "h_content":"while:", 
+"content":["while test true<br>repeat<br><br>when not true break out"]}},
+
+{"tag":"div","element_class":"footer",
+
+"contained1":{"content":["Kalindi", "Stage 2", "May 2015"]}},
+
+{"tag":"nav", "contained1":{"link": [["/stage2/pt1", "did not read so carefully", "back"], ["../../../", "back to safety", "home"], ["/stage2/auto_generated_programming_page", "moooooore", "next"]]}}]
+
+
+

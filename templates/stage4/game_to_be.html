@@ -1,0 +1,46 @@
+{% extends "/stage4/base.html" %}
+
+{% block content %}
+
+<p id="instruction">
+CLICK ON SQUARES TO SEE!
+</p>
+
+<form method="post" action="/stage4/game_to_be">
+		<div class="content">
+				{% for term, definition in game_dict.items() %}
+			  <div style="order: {{definition[1]}};">
+				<label for="toggle{{definition[1]}}">  
+				<!-- label throws error in validator, I understand this is probably very 
+						far from a good way of making this functionality, but it works to 
+						click on and off the images, if you have a better tip, i am open to it.
+						otherwise i ll maybe try in the future to do some python-->
+						<div class="{{term}} memory">
+						<input type="checkbox" id="toggle{{definition[1]}}"> 
+								<p class="to-be-changed">
+								{% filter upper %} 
+										{{term}}
+								{% endfilter %}
+								</p>
+						</div>
+				</label>
+				</div>
+				<div style="order: {{definition[2]}};">
+				<label for="toggle{{definition[2]}}" > 
+						<div class="{{term}} memory">
+						<input type="checkbox" id="toggle{{definition[2]}}">  
+								<p class="to-be-changed text">
+										{{definition[0]}}
+								</p>
+						</div>
+				</label>
+				</div>
+				
+				{% endfor %}
+		</div>
+</form>
+<p id="invitation"> If you want to play the actual game, try here: 
+		<a href="/../stage5/inputs" title="add your own - link to input page "> stage 5</a>.
+<p>
+
+{% endblock %}

@@ -1,0 +1,282 @@
+/*Here is the style for the notes3.0*/
+
+/* some general style*/
+
+
+body {
+	width: 750px; 
+	margin: auto;
+   /* display: table-cell;
+    i don't really understand how this display thing worked, 
+    (both what i put in the html as well as here), while cleaning up the css
+    i tried a bit in another document, but here if i did all got destroyed 
+    so i left it, in case you have a good explanation page, or a fast tip 
+    yourself, I d be glad to hear*/
+    font-family: Georgia, Helvetica, sans-serif;
+	background-color: rgb(0, 4, 50);	
+	color: white;
+}
+
+h1, 
+h4, 
+h5, 
+h3, 
+h6 {
+	margin: 4px;
+}
+
+p {
+	color: white;
+	padding-left: 4px;
+} 
+
+ 
+li, 
+.explanations,
+.knowledge-bar3 {
+	font-size: 14px;
+}
+
+a {
+	color: rgb(81, 110, 255);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(250, 38, 102);
+}
+
+/*trying to collect all the flexes*/
+
+.intro, 
+.navigation-bar, 
+.knowledge-bar1, 
+.knowledge-bar2, 
+.knowledge-bar3,
+.knowledge-bar3-titles,
+.minibox,
+footer {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+}
+
+.intro, 
+.navigation-bar nav a, 
+.navigation-bar p,
+article,
+.explanations, 
+.placeholder, 
+div.minibox-set1,
+div.minibox-set2, 
+div.minibox-set3, 
+div.minibox-set4 {
+	border-style: solid; 
+	/*how to do in this case where I have many boxes that differ a 
+	bit but they have a few elements in common, for example they 
+	have border-style in common, but all other things not. Is it good 
+	to group them all like this and have the the differences separated,
+	or would it be better to have the whole part defining the characteristics
+	of a box all together in one, repeating some calls?*/
+	/* would it be better to make a class:"border-solid"; where 
+	i want such style to be and than assign the style to this one class here?*/
+}
+
+.intro {
+	border-color: #865ffa;
+	padding: 10px;
+	border-radius: 8px;
+	margin-right: 4px;
+	background-color: lightblue; 
+}
+
+.intro div,
+.intro h1,
+.intro h4,
+.intro h5 {
+	color: darkblue;
+	background-color: inherit; 
+	/*is there a way to make the whole header light blue 
+	without making all the elements one by one light blue*/
+}
+
+header {
+	margin-top: 15px;
+}
+
+header hr {
+    width: 545px;
+    margin-left: 0px;
+}
+
+.intro div { /* is it better to  do it like this, or give also the div some classess?*/
+	width: 580px;
+}
+
+.intro img {
+    width: 140px;
+}	
+
+/*info about the little banner under the heaader*/
+
+.navigation-bar p {
+	width: 68%;
+}
+
+.navigation-bar nav {
+	margin-top: 19px;
+	/*how can i make each of the links take the remaining 
+	space f.ex. 20%, 20% and make each of the names float in 
+	the middle of its alloted block*/
+}
+
+.navigation-bar nav a, 
+.navigation-bar p {
+	border-color: #683aa3;
+}
+
+/*article elements*/
+
+.explanations {
+	border-radius: 6px;
+	margin: 2px;
+	border-color: lightyellow;
+}
+
+article, 
+.placeholder {
+	border-color: lightpink;
+	border-radius: 6px;
+	margin: 4px;
+}
+
+article h4 {
+	padding-left: 10px;
+}
+
+/*first box line*/
+
+.inheritance {
+	width: 380px;
+}
+
+.inheritance h4 {
+	padding: 5px;
+}
+
+.css-format p {
+	margin-bottom: 4px;
+}
+
+.knowledge-bar1 .placeholder {
+	width: 102px;
+	height: 116px;
+}
+
+/*second boxline */
+
+figure {
+	margin: 2px;
+	font-size: 11px;
+}
+
+figure img {
+	width: 273px;
+}
+
+ul {
+    margin: 6px auto;
+    padding-right: 17px;
+} /*is this bad, giving a container a special style, if i make the same container somewhere else? 
+What would be a good way to name the class to give it style?*/
+
+.knowledge-bar2 .placeholder {
+	height: 20px;
+	width: 549px;
+	margin-top: 2px;
+	margin-bottom: 0px;
+}
+
+/*info for bottom box*/
+
+.knowledge-bar3 {
+	padding-bottom: 2px;
+}
+
+.knowledge-bar3-titles {
+	clear: both;
+}
+
+.knowledge-bar3 div {
+	margin: 2px 5px 0 0;
+}
+
+.knowledge-bar3 {
+	margin-left: 6px;
+}
+
+.knowledge-bar3-titles h4 {
+	margin-right: 0px;
+	margin-left: 5px;
+}
+
+.knowledge-bar3-titles h5 {
+	margin: 7px 5px 7px 0;
+}
+
+.knowledge-bar3 p {
+	margin: 3px;
+	margin-left: 1px;
+}
+
+div.minibox-set1,
+div.minibox-set2, 
+div.minibox-set3, 
+div.minibox-set4 {
+	border-radius: 6px;
+}
+
+
+/*little boxes at the bottom*/
+
+.minibox-set1 {
+	color: rgb(205, 38, 38);
+	border-color: rgb(205, 38, 38);
+	text-align: center;
+}
+
+.minibox-set2 {
+	color: rgb(185, 173, 230);
+	border-color: rgb(185, 173, 230);
+}
+
+.minibox-set3 {
+	color: lightgreen;
+	border-color: lightgreen;
+}
+
+.minibox-set4 {
+	color: orange;
+	border-color: orange;
+}
+
+/*footer*/
+
+footer {
+	justify-content: space-between;
+}
+
+footer p {
+	margin: 5px 10px 2px 3px;
+	color: #7a7777;
+}
+ 
+/**
+* {
+   outline: 1px solid red !important;
+}
+*/
+
+
+/* i helped myself with snipets of code from w3 and stack overflow */ 

@@ -1,0 +1,22 @@
+["Tab title","Big page title",
+{"tag":"div","element_class":"class-name", "class_heading":"name-heading",
+"contained1":{"heading":"h#", "h_content":"Minititle", 
+"content":["content", "content"]},
+
+"contained2":{"heading":"h#", "h_content":"Minititle", 
+"content":["content", "content"],
+"img":["http:", "alt", "title"],
+"link": ["http", "title", "text"],
+"content":["content", "content"]}},
+
+{"tag":"div","element_class":"class",
+"contained1":{"heading":"h#", "h_content":"Minititle", 
+"content":["content", "content"]},
+
+"contained2":{"heading":"h#", "h_content":"Minititle", 
+"content":["content", "content",
+"one can actually keep parts of the structure reach different effects"],
+"img":["http:", "alt", "title"],
+"link": ["http", "title", "text"]}}]
+
+

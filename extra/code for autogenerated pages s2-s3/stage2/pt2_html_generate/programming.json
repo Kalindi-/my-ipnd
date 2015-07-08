@@ -1,0 +1,13 @@
+["THE PROGRAMMING!","how is it",
+
+{"tag":"div","element_class":"explanation", "class_heading":"with computers",
+"contained1":{"heading":"h4", "h_content":"What makes programming interesting:", 
+"content":["gives the head the task to a break big problem into small problems.", 
+"many people had similar problems that they tried to solve and found the solution", 
+"one can use these pieces (and the internet stores them)",
+"or write ones own.", "piece by piece it comes together","into","one",
+"tree","tree","tree","tree","tree","tree","tree","tree","tree","tree","tree","tree","tree","tree","tree",
+"grlaslsglrlalssgrlaslsgrllaslsgrlassllglraslsglraslsglraslsgrlalsslgralslslglrlasslgrlalssgrlalsslglrasllslgrlalslsgrlaslsgllraslslglrass"]}},
+{"tag":"div","element_class":"footer","contained1":{"content":["Kalindi", "Stage 2", "May 2015"]}},
+{"tag":"nav", "contained1":{"link": [["/stage2/auto_generated_python_page", "did not read so carefully", "back"],
+["../../../", "back to safety", "home"], ["../stage3/using_classes", "moooooore", "next"]]}}]

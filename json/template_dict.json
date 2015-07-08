@@ -1,0 +1,34 @@
+{
+
+"homepage": ["/","homepage.html"],
+
+"stage0notes1": ["/stage0/notes1", "/stage0/notes1.html"],
+"stage0notes2": ["/stage0/notes2","/stage0/notes2.html"],
+"stage0notes3": ["/stage0/notes3","/stage0/notes3.html"],
+
+"stage1pt1": ["/stage1/pt1","/stage1/stage1pt1.html"],
+"stage1pt2": ["/stage1/aboutcss","/stage1/aboutcss.html"],
+
+
+"stage2pt1": ["/stage2/pt1", "/stage2/pt1/stage2.html"],
+"stage2pt2": ["/stage2/auto_generated_python_page","/stage2/pt2_html_generate/python.html"],
+"stage2pt3": ["/stage2/auto_generated_programming_page","/stage2/pt2_html_generate/programming.html"],
+
+"stage3": ["/stage3/using_classes","/stage3/using_classes.html"],
+
+"stage4pt1": ["/stage4", "/stage4/front_page.html"],
+"stage4pt2": ["/stage4/terms1","/stage4/game_to_be.html"],
+"stage4pt3": ["/stage4/terms2","/stage4/game_to_be.html"],
+
+"stage4pt4": ["/stage4/inputs","/stage4/inputs.html", "/stage4/game_to_be"],
+"stage4pt5": ["/stage4/game_to_be", "/stage4/game_to_be.html", "/stage4/game_to_be", "/stage4/inputs.html", "Box"],
+
+"stage5pt1": ["/stage5", "/stage5/front_page.html"],
+"stage5pt2": ["/stage5/terms1","/stage5/game_to_be.html"],
+"stage5pt3": ["/stage5/terms2","/stage5/game_to_be.html"],
+"stage5pt4": ["/stage5/about_javascript","/stage5/game_to_be.html"],
+
+"stage5pt5": ["/stage5/inputs", "/stage5/inputs.html", "/stage5/game_to_be"],
+"stage5pt6": ["/stage5/game_to_be", "/stage5/game_to_be.html", "/stage5/game_to_be", "/stage5/inputs.html", "Card"]
+
+}

@@ -1,0 +1,34 @@
+{% extends "/stage5/base.html" %}
+{% block title%}
+{{title}}
+{% endblock title %}
+{% block content %}
+<p id="instruction">
+	CLICK ON SQUARES TO SEE!
+</p>
+<form method="post" action="/stage5/game_to_be">
+ <div class="content"> 
+  {% for term, definition in game_dict.items() %}
+	 <div style="order: {{definition[1]}};" class="memory play card" id="{{definition[3]}}"  onclick="isPair({{definition[3]}})">
+		<p>
+		 {% filter upper %} {{term}} {% endfilter %}
+		</p>
+	 </div>
+	 <div style="order: {{definition[2]}};" class="memory play definition card"  id="{{definition[3]}}"
+	 onclick="isPair({{definition[4]}})"> 
+	 <!-- i use an id for two different elements to check if they are the same, how could i do this better?-->
+		<p>
+		 {{definition[0]}}
+		</p>		
+	 </div> 
+	{% endfor %}
+ </div>
+</form>
+<div class="score">
+<p id="score"> Score: 0</p>
+<p id="round"> Round: 0</p>
+</div>
+<p class="hide happy">:)</p> 
+<p class="hide sad">:(</p>
+<p class="congratulations hide">YoU <br> WoN</p>
+{% endblock %}

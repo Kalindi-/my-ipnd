@@ -1,0 +1,104 @@
+/*Style for stage 2 (part 1)*/
+
+/*body position and size*/
+
+body {
+    width: 1000px; 
+    margin: auto;
+    font-family: Georgia, Helvetica, sans-serif;
+}
+
+
+/*link settings*/
+
+a {
+	color: rgb(81, 110, 255);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(250, 38, 102);
+}
+
+/*some proprieties of elements running across the page */
+
+.knowledge-bar1,
+.knowledge-bar2,
+.knowledge-bar3,
+h1,
+h5 { 
+	text-align: center;
+}
+
+.knowledge-bar1 {
+	text-align: justify;
+}
+
+.text-line,
+.knowledge-bar1,
+.knowledge-bar2 {
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+}
+
+.banner {
+	background-color: lightgray; 
+	padding: 10px;
+}
+
+section,
+.knowledge-bar2 p,
+.knowledge-bar3 {
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	margin: 2px;
+}
+
+
+/*some little repairings*/
+
+section {
+	padding: 7px;
+}
+
+.knowledge-bar2 p {
+	flex-grow: 1;
+	padding: 5px;
+	margin-top: -10px;
+}
+
+.knowledge-bar2 p:not(:nth-child(2)) {
+	padding-top: 13px;
+} 
+
+.flipped-image {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH"; /*v for vertically */
+}
+
+
+/*footer settings*/
+
+.text-line {
+  justify-content: space-between;
+}
+
+.text-line p {
+	color: lightgray;
+	margin: 0;
+}
+
+
+/**
+* {
+   outline: 1px solid red !important;
+}
+
+/**i helped myself with snipets of code from w3 and stack overflow**/ 

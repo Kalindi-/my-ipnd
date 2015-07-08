@@ -1,0 +1,186 @@
+
+/*general style*/
+body {
+	font-family: Georgia, Helvetica, sans-serif;
+	max-width: 1100px;
+	margin: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+h1 {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* button display*/
+.concepts a {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.concepts,
+footer { 
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: -moz-flex;
+}
+
+.concepts {
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+
+/*the positioning of the buttons depending on size of screen*/
+
+@media screen and (max-width: 1200px) {
+.boxes {width: 12%}
+}
+
+@media screen and (max-width: 1000px) {
+.boxes {width: 18%}
+}
+
+@media screen and (max-width: 800px) {
+.boxes {width: 25%}
+}
+
+@media screen and (max-width: 600px) {
+.boxes {width: 33.33333%}
+}
+
+@media screen and (max-width: 640px) {
+.modalDialog > div {max-width: 60%}
+}
+
+@media screen and (max-width: 400px) {
+.boxes {width: 50%}
+}
+
+/*My previous reviewer left me this:
+
+"Good work in the use of media query, this is quite advanced, but you might be interested in learning it anyway 
+CSS follows the principle of cascading styles. This means that the last read style is the one that is active or used.
+That is why I would recommend that put your query code at the end so that is doesn't get overwritten by the CSS you 
+add after the query code. Read more about CSS here: http://en.wikipedia.org/wiki/Cascading_Style_Sheets and 
+https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries."
+
+My question is, is this true? What about things that don't apply to the page directly, like the css on the modal boxes, 
+or the home link or footer?
+
+*/
+
+
+/*bottom and top*/
+
+.home {
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+footer {
+    justify-content: space-between;
+	color: lightgray;
+	margin-top: 30%;
+}
+
+
+/*modal boxes*/
+
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999; 
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+/*I copied the code for the modal boxes, and try to reduce it  a bit to a state where
+ i understand what is happening as much as possible, while still retaining the functionality.
+ These pointer events are fired as errors by the css validator, but i do not know how to 
+ replace them or what is wrong. Any hints?*/
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 500px;
+	position: relative;
+	margin: 10% auto;
+	padding: 10px;
+	padding-right: 20px;
+	padding-left: 60px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+/* the close button*/
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { 
+	background: red; 
+}
+
+/*the importance indicator*/
+.importance {
+	color: #FFFFFF;
+	line-height: 30px;
+	position: absolute;
+	left: 14px;
+	text-align: center;
+	top: 36px;
+	width: 30px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.very {
+	background: red;
+}
+
+.middle {
+	background: orange;
+}
+
+.not-very {
+	background: green;
+}
