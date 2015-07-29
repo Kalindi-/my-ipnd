@@ -18,7 +18,7 @@ a:hover {
 
 .homepage {
 	position: absolute;
-	left: 735px; /* looking for a better way to do this*/
+	left: 735px;
 	top: 5px;
 	padding: 3px;
 	outline: 1px solid rgb(81, 110, 255);
@@ -54,7 +54,7 @@ footer {
 
 ol {
 	font-size: 13px;
-} 
+}
 
 /*images*/
 
@@ -80,7 +80,7 @@ footer p {
 }
 
 
-/* * this is the trick from class to see the outlines, i like it a lot 
+/* * this is the trick from class to see the outlines, i like it a lot
 and use it sometimes when things don't work the way I think they should*
 * {
    outline: 1px solid red !important;

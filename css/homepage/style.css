@@ -21,10 +21,10 @@ a:hover {
 
 
 /*some page display style*/
-.fotoalbum, 
+.fotoalbum,
 #homepage,
 #submit,
-footer {
+#footer-text {
 	display: flex;
 	display: -webkit-flex;
 	display: -ms-flex;
@@ -32,17 +32,19 @@ footer {
 }
 
 .fotoalbum {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #collection {
-	width: 550px;
+	margin: 0 50px 0 0 ;
+	max-width: 550px;
 }
 
 #description {
 	margin-left: 30px;
 	margin-top: 18px;
 	width: 338px;
+	padding-bottom: 20px;
 }
 
 form {
@@ -66,6 +68,11 @@ form {
 
 
 /*img and captions style*/
+
+figure {
+	width: 70px;
+}
+
 img {
 	height: 100px;
 	width: 100px;
@@ -94,7 +101,42 @@ footer {
   	margin-bottom: -10px;
   	color: lightgray;
   	background-color: white;
+}
+
+#footer-text {
     justify-content: space-between;
 }
+
+hr {
+	margin: 4px auto;
+	border: 0 none;
+	background-color: lightgray;
+	height: 1px;
+}
+
+
+@media screen and (max-width: 880px) {
+	body {
+		width: 500px;
+	}
+	#homepage {
+		margin: auto;
+		flex-wrap: wrap
+	}
+
+	#description {
+		margin: auto;
+	}
+
+	footer {
+		width: 500px;
+	}
+}
+
+/*
+* {
+   outline: 1px solid red !important;
+}
+*/
 
 /*Thank you for checking*/

@@ -3,7 +3,7 @@
 /*body position and size*/
 
 body {
-    width: 1000px; 
+    width: 1000px;
     margin: auto;
     font-family: Georgia, Helvetica, sans-serif;
 }
@@ -26,7 +26,7 @@ a:hover {
 .knowledge-bar2,
 .knowledge-bar3,
 h1,
-h5 { 
+h5 {
 	text-align: center;
 }
 
@@ -44,7 +44,7 @@ h5 {
 }
 
 .banner {
-	background-color: lightgray; 
+	background-color: lightgray;
 	padding: 10px;
 }
 
@@ -72,7 +72,7 @@ section {
 
 .knowledge-bar2 p:not(:nth-child(2)) {
 	padding-top: 13px;
-} 
+}
 
 .flipped-image {
     -moz-transform: scaleX(-1);
@@ -101,4 +101,4 @@ section {
    outline: 1px solid red !important;
 }
 
-/**i helped myself with snipets of code from w3 and stack overflow**/ 
+/**i helped myself with snipets of code from w3schools and stack overflow**/

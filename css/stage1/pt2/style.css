@@ -4,23 +4,17 @@
 
 
 body {
-	width: 750px; 
+	width: 750px;
 	margin: auto;
-   /* display: table-cell;
-    i don't really understand how this display thing worked, 
-    (both what i put in the html as well as here), while cleaning up the css
-    i tried a bit in another document, but here if i did all got destroyed 
-    so i left it, in case you have a good explanation page, or a fast tip 
-    yourself, I d be glad to hear*/
     font-family: Georgia, Helvetica, sans-serif;
-	background-color: rgb(0, 4, 50);	
+	background-color: rgb(0, 4, 50);
 	color: white;
 }
 
-h1, 
-h4, 
-h5, 
-h3, 
+h1,
+h4,
+h5,
+h3,
 h6 {
 	margin: 4px;
 }
@@ -28,10 +22,10 @@ h6 {
 p {
 	color: white;
 	padding-left: 4px;
-} 
+}
 
- 
-li, 
+
+li,
 .explanations,
 .knowledge-bar3 {
 	font-size: 14px;
@@ -48,10 +42,10 @@ a:hover {
 
 /*trying to collect all the flexes*/
 
-.intro, 
-.navigation-bar, 
-.knowledge-bar1, 
-.knowledge-bar2, 
+.intro,
+.navigation-bar,
+.knowledge-bar1,
+.knowledge-bar2,
 .knowledge-bar3,
 .knowledge-bar3-titles,
 .minibox,
@@ -62,24 +56,24 @@ footer {
 	display: -moz-flex;
 }
 
-.intro, 
-.navigation-bar nav a, 
+.intro,
+.navigation-bar nav a,
 .navigation-bar p,
 article,
-.explanations, 
-.placeholder, 
+.explanations,
+.placeholder,
 div.minibox-set1,
-div.minibox-set2, 
-div.minibox-set3, 
+div.minibox-set2,
+div.minibox-set3,
 div.minibox-set4 {
-	border-style: solid; 
-	/*how to do in this case where I have many boxes that differ a 
-	bit but they have a few elements in common, for example they 
-	have border-style in common, but all other things not. Is it good 
+	border-style: solid;
+	/*how to do in this case where I have many boxes that differ a
+	bit but they have a few elements in common, for example they
+	have border-style in common, but all other things not. Is it good
 	to group them all like this and have the the differences separated,
 	or would it be better to have the whole part defining the characteristics
 	of a box all together in one, repeating some calls?*/
-	/* would it be better to make a class:"border-solid"; where 
+	/* would it be better to make a class:"border-solid"; where
 	i want such style to be and than assign the style to this one class here?*/
 }
 
@@ -88,7 +82,7 @@ div.minibox-set4 {
 	padding: 10px;
 	border-radius: 8px;
 	margin-right: 4px;
-	background-color: lightblue; 
+	background-color: lightblue;
 }
 
 .intro div,
@@ -96,8 +90,8 @@ div.minibox-set4 {
 .intro h4,
 .intro h5 {
 	color: darkblue;
-	background-color: inherit; 
-	/*is there a way to make the whole header light blue 
+	background-color: inherit;
+	/*is there a way to make the whole header light blue
 	without making all the elements one by one light blue*/
 }
 
@@ -116,7 +110,7 @@ header hr {
 
 .intro img {
     width: 140px;
-}	
+}
 
 /*info about the little banner under the heaader*/
 
@@ -126,12 +120,9 @@ header hr {
 
 .navigation-bar nav {
 	margin-top: 19px;
-	/*how can i make each of the links take the remaining 
-	space f.ex. 20%, 20% and make each of the names float in 
-	the middle of its alloted block*/
 }
 
-.navigation-bar nav a, 
+.navigation-bar nav a,
 .navigation-bar p {
 	border-color: #683aa3;
 }
@@ -144,7 +135,7 @@ header hr {
 	border-color: lightyellow;
 }
 
-article, 
+article,
 .placeholder {
 	border-color: lightpink;
 	border-radius: 6px;
@@ -188,7 +179,7 @@ figure img {
 ul {
     margin: 6px auto;
     padding-right: 17px;
-} /*is this bad, giving a container a special style, if i make the same container somewhere else? 
+} /*is this bad, giving a container a special style, if i make the same container somewhere else?
 What would be a good way to name the class to give it style?*/
 
 .knowledge-bar2 .placeholder {
@@ -231,8 +222,8 @@ What would be a good way to name the class to give it style?*/
 }
 
 div.minibox-set1,
-div.minibox-set2, 
-div.minibox-set3, 
+div.minibox-set2,
+div.minibox-set3,
 div.minibox-set4 {
 	border-radius: 6px;
 }
@@ -271,7 +262,7 @@ footer p {
 	margin: 5px 10px 2px 3px;
 	color: #7a7777;
 }
- 
+
 /**
 * {
    outline: 1px solid red !important;
@@ -279,4 +270,4 @@ footer p {
 */
 
 
-/* i helped myself with snipets of code from w3 and stack overflow */ 
+/* i helped myself with snipets of code from w3schools and stack overflow */

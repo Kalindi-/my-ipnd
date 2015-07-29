@@ -23,7 +23,7 @@ a {
 }
 
 .concepts,
-footer { 
+footer {
 	display: flex;
 	display: -webkit-flex;
 	display: -ms-flex;
@@ -39,38 +39,38 @@ footer {
 /*the positioning of the buttons depending on size of screen*/
 
 @media screen and (max-width: 1200px) {
-.boxes {width: 12%}
+	.boxes {width: 12%}
 }
 
 @media screen and (max-width: 1000px) {
-.boxes {width: 18%}
+	.boxes {width: 18%}
 }
 
 @media screen and (max-width: 800px) {
-.boxes {width: 25%}
+	.boxes {width: 25%}
 }
 
 @media screen and (max-width: 600px) {
-.boxes {width: 33.33333%}
+	.boxes {width: 33.33333%}
 }
 
 @media screen and (max-width: 640px) {
-.modalDialog > div {max-width: 60%}
+	.modalDialog > div {max-width: 60%}
 }
 
 @media screen and (max-width: 400px) {
-.boxes {width: 50%}
+	.boxes {width: 50%}
 }
 
 /*My previous reviewer left me this:
 
-"Good work in the use of media query, this is quite advanced, but you might be interested in learning it anyway 
+"Good work in the use of media query, this is quite advanced, but you might be interested in learning it anyway
 CSS follows the principle of cascading styles. This means that the last read style is the one that is active or used.
-That is why I would recommend that put your query code at the end so that is doesn't get overwritten by the CSS you 
-add after the query code. Read more about CSS here: http://en.wikipedia.org/wiki/Cascading_Style_Sheets and 
+That is why I would recommend that put your query code at the end so that is doesn't get overwritten by the CSS you
+add after the query code. Read more about CSS here: http://en.wikipedia.org/wiki/Cascading_Style_Sheets and
 https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries."
 
-My question is, is this true? What about things that don't apply to the page directly, like the css on the modal boxes, 
+My question is, is this true? What about things that don't apply to the page directly, like the css on the modal boxes,
 or the home link or footer?
 
 */
@@ -100,7 +100,7 @@ footer {
 	bottom: 0;
 	left: 0;
 	background: rgba(0,0,0,0.8);
-	z-index: 99999; 
+	z-index: 99999;
 	opacity:0;
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
@@ -109,7 +109,7 @@ footer {
 }
 /*I copied the code for the modal boxes, and try to reduce it  a bit to a state where
  i understand what is happening as much as possible, while still retaining the functionality.
- These pointer events are fired as errors by the css validator, but i do not know how to 
+ These pointer events are fired as errors by the css validator, but i do not know how to
  replace them or what is wrong. Any hints?*/
 
 .modalDialog:target {
@@ -150,8 +150,8 @@ footer {
 	box-shadow: 1px 1px 3px #000;
 }
 
-.close:hover { 
-	background: red; 
+.close:hover {
+	background: red;
 }
 
 /*the importance indicator*/
