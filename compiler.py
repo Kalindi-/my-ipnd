@@ -1,10 +1,10 @@
-# IPND!!!!!! 
+# IPND!!!!!!
 # plenty notes, some playing around, and a little game
 # tiny trainings in html, css, python, json, jinja and javascript
 
 #####
 
-#this compiler was written in stage 4, and made better in stage 5 
+#this compiler was written in stage 4, and made better in stage 5
 
 
 import os
@@ -28,11 +28,11 @@ game_data = json.load(open('json/game.json'))
 # page making handler
 class Handler(webapp2.RequestHandler):
     """contains the basic methods for rendering the templates into html pages"""
-    def write(self, *arguments, **key_word_dictionary):    
+    def write(self, *arguments, **key_word_dictionary):
         """makes a html page out of the inputs"""
         self.response.out.write(*arguments, **key_word_dictionary)
 
-    def render_str(self, template, **parameters): 
+    def render_str(self, template, **parameters):
     # why here paramenters, and in the other cases i call it key_word_dicitionary
         """makes a string out of the inputs"""
         t = template_env.get_template(template)
@@ -57,8 +57,8 @@ def get_page(page):
     return StagePage
 
 def get_term_page(page, game_dict, title):
-    "inputs the necessary data for the makes my term pages up"  
-    class TermPage(Handler):  
+    "inputs the necessary data for the makes my term pages up"
+    class TermPage(Handler):
         def get(self):
             self.render(template_dict[page][1], game_dict=pair_and_random(game_data[game_dict]), title = title)
     return TermPage
@@ -126,7 +126,7 @@ def pair_and_random(dictionary):
     order_nums = range(len(game_dict.keys())*2)
     card_nums = list(order_nums)
     random.shuffle(order_nums)
-    
+
     for key,value in game_dict.items():
         game_dict[key] = [value, order_nums[0], order_nums[1], card_nums[0], card_nums[1]]
         order_nums = order_nums[2:]
@@ -135,17 +135,17 @@ def pair_and_random(dictionary):
     return game_dict
 
 def little_delay():
-    """databases need a moment to update, if no delay, the redirection 
+    """databases need a moment to update, if no delay, the redirection
        does not show the most recent input"""
     time_to_update = .1
     time.sleep(time_to_update)
 
 
 #creation of pages
-app = webapp2.WSGIApplication([(template_dict["homepage"][0], HomePage),     
+app = webapp2.WSGIApplication([(template_dict["homepage"][0], HomePage),
 
                                (template_dict["stage0notes1"][0], get_page("stage0notes1")),
-                               (template_dict["stage0notes2"][0], get_page("stage0notes2")),                    
+                               (template_dict["stage0notes2"][0], get_page("stage0notes2")),
                                (template_dict["stage0notes3"][0], get_page("stage0notes3")),
 
                                (template_dict["stage1pt1"][0], get_page("stage1pt1")),
@@ -157,13 +157,13 @@ app = webapp2.WSGIApplication([(template_dict["homepage"][0], HomePage),
 
                                (template_dict["stage3"][0], get_page("stage3")),
 
-                               (template_dict["stage4pt1"][0], get_page("stage4pt1")),                    
+                               (template_dict["stage4pt1"][0], get_page("stage4pt1")),
                                (template_dict["stage4pt2"][0], get_term_page("stage4pt2",2, " - Terms 1 game")),
                                (template_dict["stage4pt3"][0], get_term_page("stage4pt3",1, "- Terms 2 game")),
                                (template_dict["stage4pt4"][0], get_page("stage4pt4")),
-                               (template_dict["stage4pt5"][0], get_input_page("stage4pt5",1,2,3,4)),  
+                               (template_dict["stage4pt5"][0], get_input_page("stage4pt5",1,2,3,4)),
 
-                               (template_dict["stage5pt1"][0], get_page("stage5pt1")),                    
+                               (template_dict["stage5pt1"][0], get_page("stage5pt1")),
                                (template_dict["stage5pt2"][0], get_term_page("stage5pt2",2, " - Terms 1 game")),
                                (template_dict["stage5pt3"][0], get_term_page("stage5pt3",1, " - Terms 2 game")),
                                (template_dict["stage5pt4"][0], get_term_page("stage5pt4",0, " - game about javascript")),

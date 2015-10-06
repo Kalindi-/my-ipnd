@@ -6,40 +6,40 @@
 {"tag":"section","contained1":{"heading":"h2","h_content":"Variables"}},
 
 {"tag":"section", "element_class":"knowledge-bar",
-"contained1":{"heading":"h4", "h_content":"Variables and Values", 
-"content":["a variable stores a value", "to assign a value to the variable we use '=' ", 
+"contained1":{"heading":"h4", "h_content":"Variables and Values",
+"content":["a variable stores a value", "to assign a value to the variable we use '=' ",
 "it can contain many types of info:","integers, strings, numbers, dictionaries"]},
 
-"contained2":{"heading":"h4", "h_content":"Variable activities", 
-"content":["things can happen to the variable, depending on their type:", 
-"we can put them together one after the other, sum them up,", 
-"multiply them (which can mean different things)", 
-"change parts of theirs, put them in a different order,", 
+"contained2":{"heading":"h4", "h_content":"Variable activities",
+"content":["things can happen to the variable, depending on their type:",
+"we can put them together one after the other, sum them up,",
+"multiply them (which can mean different things)",
+"change parts of theirs, put them in a different order,",
 "and we can also use them to give us their values when called"]},
 
-"contained3":{"heading":"h4", "h_content":"Like this:", 
+"contained3":{"heading":"h4", "h_content":"Like this:",
 "content":["variable assignment statment"," &nbsp; e.g. cat_weight = 3.3"]}},
 
 
 {"tag":"div","element_class":"explanation", "class_heading":"Abstract thinking",
 "contained1":{"heading":"h4", "h_content":
 "Generalize the problem to get a general solution - Can reuse solution!!!!"},
-"contained2":{"heading":"h5", "h_content":"Awesome things - functions", 
+"contained2":{"heading":"h5", "h_content":"Awesome things - functions",
 "content":["they are basically recipes for the general solution."]}},
 
 {"tag":"div","element_class":"knowledge-bar", "class_heading":"Functions",
 
-"contained1":{"heading":"h3", "h_content":"Defining functions", 
-"content":["They are defined through various steps:", 
-"def function_name(parameter, parameter):", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stuff happening to or with help of parameters", 
+"contained1":{"heading":"h3", "h_content":"Defining functions",
+"content":["They are defined through various steps:",
+"def function_name(parameter, parameter):", "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stuff happening to or with help of parameters",
 "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return something useful", "(if there is no return, chances are it did something internally to its variables, or your computer moves invane)"]},
 
-"contained2":{"heading":"h3", "h_content":"Why good", 
-"content":["Repetition: they help us avoid it!", 
+"contained2":{"heading":"h3", "h_content":"Why good",
+"content":["Repetition: they help us avoid it!",
 "The procedure needs to be expressed only one time, then it can be used as many times as wished for by simply calling it",
 "One calls it for it to come to action, and do what it is defined to do"]},
 
-"contained3":{"heading":"h3", "h_content":"Calling a function", 
+"contained3":{"heading":"h3", "h_content":"Calling a function",
 "content":[ "function_name(the required parameters)", "this is how one calls a function.",
 "You call it so that it comes to action, and does what it is defined to do"]}},
 
@@ -78,15 +78,15 @@
 
 {"tag":"div","element_class":"knowledge-bar5", "class_heading":"Doing stuff with lists",
 
-"contained1":{"heading":"h4", "h_content":"list<strong>.append</strong>(anything)", 
+"contained1":{"heading":"h4", "h_content":"list<strong>.append</strong>(anything)",
 "content":["Append appends whatever is given into the last spot on the list. So in case it is a list, the whole list becomes the last element of the list.Append changes the called list."]},
-"contained2":{"heading":"h4", "h_content":"<strong>concatenate</strong>:<br>newlist=list+list", 
+"contained2":{"heading":"h4", "h_content":"<strong>concatenate</strong>:<br>newlist=list+list",
 "content":["Adds what is given from the last spot forward. If the list added has 3 elements, concatenation will increase the length of the list by 3 elements. It does not alias - it creates a new list when doing so. If the concatenation happens within a function, nothing happens to the mother list."]},
-"contained3":{"heading":"h4", "h_content":"<strong>whitinconcatenate</strong>: list+=stufftoadd", 
+"contained3":{"heading":"h4", "h_content":"<strong>whitinconcatenate</strong>: list+=stufftoadd",
 "content":["+= aliases the list and so whatever happens to the new list happens to the old list as well - this is why when inside functions their values are transfered also out."]},
 "contained4":{ "heading":"h4", "h_content":"Example excercise",
 "content":["function with three lists as inputs. Mutate the first to include 'a' as the last entry, mutate the second to include 'a', 'b', 'c' and a copy of the last one returned with additional 'd'"],
-"img":["img/solution.png", "def list_test(list1,list2,list3): list1.append('a') list2+=['a','b','c'] return list3+['d']", "Lists at the end: [1, 2, 3, 'a'],[1, 2, 3, 'a', 'b', 'c'],[1, 2, 3], function returns: [1, 2, 3, 'd']"]}},
+"img":["../../../img/stage2/pt2_html_generate/solution.png", "def list_test(list1,list2,list3): list1.append('a') list2+=['a','b','c'] return list3+['d']", "Lists at the end: [1, 2, 3, 'a'],[1, 2, 3, 'a', 'b', 'c'],[1, 2, 3], function returns: [1, 2, 3, 'd']"]}},
 
 
 
@@ -102,11 +102,11 @@
 
 {"tag":"div","element_class":"knowledge-bar explanation", "class_heading":"Branching and Looping",
 
-"contained1":{"heading":"h3", "h_content":"if-elif-else", 
+"contained1":{"heading":"h3", "h_content":"if-elif-else",
 "content":["if test expression:<br>block<br>elif test expression:<br>block<br>else (no test expr.):<br>block<br>"]},
-"contained2":{"heading":"h3", "h_content":"for", 
+"contained2":{"heading":"h3", "h_content":"for",
 "content":["for name in list:<br>block"]},
-"contained3":{"heading":"h3", "h_content":"while:", 
+"contained3":{"heading":"h3", "h_content":"while:",
 "content":["while test true<br>repeat<br><br>when not true break out"]}},
 
 {"tag":"div","element_class":"footer",
